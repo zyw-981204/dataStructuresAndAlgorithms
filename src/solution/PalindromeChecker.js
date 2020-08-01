@@ -5,7 +5,7 @@ console.log(Object.prototype.toString.call(...'1231231231'))
 
 function PalindromeChecker (str) {
   if (str === undefined || str === null || str.length === 0) {
-    return `输入的字符串类型错误`
+    return false
   }
   let result = true
   let strCheck = new DeQueue()
