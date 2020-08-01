@@ -3,7 +3,7 @@ const Stack = obj.StackWeakmap
 
 function baseConverter (deNum, toWhat) {
   if (toWhat > 36 || (typeof toWhat) != 'number' || String(toWhat) === 'NaN') {
-    return '转换失败'
+    return false
   } else {
     let stack = new Stack()
     let intoForm = toWhat === 32 ? '0123456789abcdefghjkmnpqrstvwxyz' : '0123456789abcdefghijklmnopqrstuvwxyz'
