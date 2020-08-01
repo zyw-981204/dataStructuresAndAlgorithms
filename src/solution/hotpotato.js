@@ -20,8 +20,8 @@ function hotPotota (elementList, num) {
   }
 }
 
-let result = hotPotota(['周炜','大壮','小豪','德刚','四火'], 5009)
+let result = hotPotota(['周炜', '大壮', '小豪', '德刚', '四火'], 5009)
 result.loser.forEach((value => {
-  console.log(`${value}在游戏中被淘汰`)
+  console.log(`${value}在游戏中被淘汰了`)
 }))
 console.log(`最后的胜利者为${result.winner}`)
