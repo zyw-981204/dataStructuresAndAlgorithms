@@ -4,7 +4,6 @@ const compare = {
   LESS_THAN: -1,
   BIGGER_THEN: 1
 }
-
 function compareFn (a, b) {
   if (a === b) {
     return 0
