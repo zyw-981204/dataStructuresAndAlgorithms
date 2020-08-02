@@ -2,7 +2,8 @@ const utils = require('../utils/utils')
 const DoubleNode = utils.DoubleNode
 const LinkedListObj = require('./LinkedList')
 const LinkedList = LinkedListObj.LinkedList
-exports.DoubleLinkedList = class DoubleLinkedList extends LinkedList {
+
+class DoubleLinkedList extends LinkedList {
   constructor () {
     super()
     this.tail = undefined
@@ -169,6 +170,7 @@ exports.DoubleLinkedList = class DoubleLinkedList extends LinkedList {
       this.count = 0
     }
   }
+
   // toString (isReserve) {
   //   let str = ''
   //   isReserve = isReserve || false
@@ -187,3 +189,5 @@ exports.DoubleLinkedList = class DoubleLinkedList extends LinkedList {
   //   return str
   // }
 }
+
+exports.DoubleLinkedList = DoubleLinkedList

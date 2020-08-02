@@ -1,0 +1,13 @@
+const StackLinkedListObj = require('../base/StackLinkedList')
+const StackLinkedList = StackLinkedListObj.StackLinkedList
+let stack = new StackLinkedList()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.push(4)
+stack.push(5)
+stack.push(6)
+stack.push(7)
+stack.push(0)
+stack.pop()
+console.log(stack.peek())

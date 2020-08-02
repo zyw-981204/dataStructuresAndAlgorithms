@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53362e7e-0361-4a36-9ea8-48764d95cd33" name="Default Changelist" comment="完成了有序链表的按序插入，并进行了测试,">
+    <list default="true" id="53362e7e-0361-4a36-9ea8-48764d95cd33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/base/StackLinkedList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/StackLinkedListTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/SortLinkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/SortLinkedList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/DoubleLinkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/DoubleLinkedList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1fTkLOiaoqw5gF5pl8SxKy0NJsH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/SortLinkedListTest.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/StackLinkedListTest.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -58,14 +62,14 @@
       <recent name="C:\Users\qq136\Desktop\data-structures and Algorithms\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.SortLinkedListTest.js">
+  <component name="RunManager" selected="Node.js.StackLinkedListTest.js">
     <configuration name="JSDebug" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" uri="http://http:">
       <method v="2" />
     </configuration>
-    <configuration name="SortLinkedListTest.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/test/SortLinkedListTest.js" working-dir="$PROJECT_DIR$">
+    <configuration name="StackLinkedListTest.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/test/StackLinkedListTest.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/isEmpty.js">
@@ -73,7 +77,7 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.JSDebug" />
-      <item itemvalue="Node.js.SortLinkedListTest.js" />
+      <item itemvalue="Node.js.StackLinkedListTest.js" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -93,7 +97,7 @@
       <workItem from="1596271024573" duration="5943000" />
       <workItem from="1596281103141" duration="514000" />
       <workItem from="1596281654132" duration="15744000" />
-      <workItem from="1596328886681" duration="15868000" />
+      <workItem from="1596328886681" duration="17726000" />
     </task>
     <task id="LOCAL-00001" summary="实现了链表的数据结构 添加了一些方法 优化了代码">
       <created>1596291031360</created>
@@ -151,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596346148960</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成了有序链表的按序插入,完成了测试">
+      <created>1596346242889</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596346242889</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +177,8 @@
     <MESSAGE value="完成了循环链表的增加删除，并进行了测试" />
     <MESSAGE value="完成了有序链表的按序插入，并进行了测试," />
     <MESSAGE value="测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试" />
+    <MESSAGE value="完成了有序链表的按序插入,完成了测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了有序链表的按序插入,完成了测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="532" y="148" key="#JavaScript" timestamp="1596255336703">
@@ -177,10 +189,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="198" key="#Web_Browsers/0.0.1536.824@0.0.1536.824" timestamp="1596255426993" />
-    <state x="299" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596345707349">
+    <state x="299" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596347158468">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1596345707349" />
+    <state x="299" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1596347158468" />
     <state x="680" y="115" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1596255923902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -189,10 +201,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="68" key="#queue.js/0.0.1536.824@0.0.1536.824" timestamp="1596254940852" />
-    <state x="454" y="0" key="CommitChangelistDialog2" timestamp="1596346217892">
+    <state x="454" y="0" key="CommitChangelistDialog2" timestamp="1596346241963">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="454" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1596346217892" />
+    <state x="454" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1596346241963" />
     <state x="132" y="65" key="DiffContextDialog" timestamp="1596297348353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -205,10 +217,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="758" y="156" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596255940509" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1596345705226">
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1596347156879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596345705226" />
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596347156879" />
     <state x="615" y="256" key="Github.CreateGistDialog" timestamp="1596281530591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -221,22 +233,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="522" y="115" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596281820431" />
-    <state width="1515" height="272" key="GridCell.Tab.0.bottom" timestamp="1596345869199">
+    <state width="1515" height="272" key="GridCell.Tab.0.bottom" timestamp="1596348080090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="272" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596345869199" />
-    <state width="1515" height="272" key="GridCell.Tab.0.center" timestamp="1596345869199">
+    <state width="1515" height="272" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596348080090" />
+    <state width="1515" height="272" key="GridCell.Tab.0.center" timestamp="1596348080090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="272" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596345869199" />
-    <state width="1515" height="272" key="GridCell.Tab.0.left" timestamp="1596345869199">
+    <state width="1515" height="272" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596348080090" />
+    <state width="1515" height="272" key="GridCell.Tab.0.left" timestamp="1596348080090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="272" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596345869199" />
-    <state width="1515" height="272" key="GridCell.Tab.0.right" timestamp="1596345869199">
+    <state width="1515" height="272" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596348080090" />
+    <state width="1515" height="272" key="GridCell.Tab.0.right" timestamp="1596348080090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="272" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596345869199" />
+    <state width="1515" height="272" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596348080090" />
     <state width="1515" height="217" key="GridCell.Tab.1.bottom" timestamp="1596341575678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -289,18 +301,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="404" y="117" width="996" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596282107423" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596346159677">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596346245931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596346159677" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596346245931" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1596337692488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1596337692488" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596283542456">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596347085225">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596283542456" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596347085225" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
