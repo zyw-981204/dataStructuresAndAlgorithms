@@ -7,6 +7,7 @@ const compare = {
 function compareFn (a, b) {
   if (a === b) {
     return 0
+
   }
   return a > b ? compare.BIGGER_THEN : compare.LESS_THAN
 
