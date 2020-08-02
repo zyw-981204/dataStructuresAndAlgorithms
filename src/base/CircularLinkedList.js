@@ -4,8 +4,8 @@ const Node = utils.node
 let LinkedList = LinkedListObj.LinkedList
 
 class CircularLinkedList extends LinkedList {
-  constructor (head, count) {
-    super(head, count)
+  constructor () {
+    super()
   }
 
   push (element) {

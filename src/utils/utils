@@ -1,10 +1,23 @@
-exports.node = class node {
+class node {
   constructor (element) {
-    this.value = element
+    this.element = element
     this.next = undefined
   }
 }
 
-exports.defaultEquals = function defaultEquals (a, b) {
+class DoubleNode extends node {
+  constructor (element, next, previous) {
+    super(element, next)
+    this.previous = previous
+  }
+}
+
+function defaultEquals (a, b) {
   return a === b
 }
+
+
+exports.node = node
+exports.DoubleNode = DoubleNode
+exports.defaultEquals = defaultEquals
+

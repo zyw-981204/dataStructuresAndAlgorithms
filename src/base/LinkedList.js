@@ -32,7 +32,7 @@ exports.LinkedList = class LinkedList {
     }
     if (!this.isEmpty()) {
       for (let i = fromIndex; i < this.size(); i++) {
-        if (this.getElementAt(i).value === element) {
+        if (this.getElementAt(i).element === element) {
           result = i
           break
         }
@@ -84,7 +84,7 @@ exports.LinkedList = class LinkedList {
 
   insert (element, index) {
     let node = new Node(element)
-    if (index >= 0 && index < this.count) {
+    if (index >= 0 && index <= this.count) {
       if (index === 0) {
         if (this.count > 1) {
           node.next = this.head
@@ -120,7 +120,7 @@ exports.LinkedList = class LinkedList {
   //   } else {
   //     result = undefined
   //   }
-  //   return result.value
+  //   return result.element
   // }
 
   size () {
@@ -131,16 +131,29 @@ exports.LinkedList = class LinkedList {
     return this.count === 0
   }
 
-  toString () {
+  clear () {
+    if (this.isEmpty()) {
+      return true
+    } else {
+      this.head = null
+      this.count = 0
+    }
+  }
+  toString(isReserve) {
     let str = ''
+    isReserve = isReserve || false
     if (!this.isEmpty()) {
-      for (let i = 0; i < this.count; i++) {
-        let temp = this.getElementAt(i)
-        str += `,${temp.value}`
+      if (isReserve) {
+        for (let i = this.count - 1; i >= 0; i--) {
+          str += `,${this.getElementAt(i).element}`
+        }
+      } else {
+        for (let i = 0; i < this.count; i++) {
+          str += `,${this.getElementAt(i).element}`
+        }
       }
       str = str.substr(1)
     }
     return str
   }
-
 }
