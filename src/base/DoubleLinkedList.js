@@ -170,24 +170,6 @@ class DoubleLinkedList extends LinkedList {
       this.count = 0
     }
   }
-
-  // toString (isReserve) {
-  //   let str = ''
-  //   isReserve = isReserve || false
-  //   if (!this.isEmpty()) {
-  //     if (isReserve) {
-  //       for (let i = this.count - 1; i >= 0; i--) {
-  //         str += `,${this.getElementAt(i).element}`
-  //       }
-  //     } else {
-  //       for (let i = 0; i < this.count; i++) {
-  //         str += `,${this.getElementAt(i).element}`
-  //       }
-  //     }
-  //     str = str.substr(1)
-  //   }
-  //   return str
-  // }
 }
 
 exports.DoubleLinkedList = DoubleLinkedList

@@ -21,7 +21,8 @@ MaxQueue.prototype.push_back = function (value) {
 }
 
 MaxQueue.prototype.pop_front = function () {
-  if (this.isEmpty()) {return -1} else {
+  if (this.isEmpty()) {return -1}
+  else {
     let r = this.items[this.lowestCount]
     this.lowestCount++
     return r
