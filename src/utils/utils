@@ -37,7 +37,6 @@ function toStrFn (item) {
   }
   return String(item)
 }
-
 exports.node = node
 exports.DoubleNode = DoubleNode
 exports.defaultEquals = defaultEquals
