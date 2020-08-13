@@ -37,9 +37,19 @@ function toStrFn (item) {
   }
   return String(item)
 }
+
+class compareResult {
+  constructor () {
+    this.BIGGER = 1
+    this.SMALLER = -1
+    this.EQUAL = 0
+  }
+}
+
 exports.node = node
 exports.DoubleNode = DoubleNode
 exports.defaultEquals = defaultEquals
-exports.ValuePair = ValuePairs
+exports.ValuePair = ValuePair
 exports.toStrFn = toStrFn
+exports.compareResult = compareResult
 
