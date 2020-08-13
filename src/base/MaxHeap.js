@@ -1,11 +1,16 @@
-class MinHeap {
+const UtilObj = require('../utils/utils')
+const compareResult = UtilObj.compareResult
+const CompareResult = new compareResult()
+
+class MaxHeap {
   constructor () {
     this.heap = []
   }
 
-  compare (key1, key) {
-    if (this.heap[key1] > this.heap[key]) return 1
-    else return -1
+  compare (value1, value2) {
+    if (value1 > value2) return CompareResult.BIGGER
+    else if (value1 < value2) return CompareResult.SMALLER
+    else return CompareResult.EQUAL
   }
 
   getLeftIndex (index) {
@@ -30,7 +35,7 @@ class MinHeap {
   }
 
   insert (value) {
-    if (value != null) {
+    if (value !== null) {
       this.heap.push(value)
       this.shiftUp(this.heap.length - 1)
       return true
@@ -39,11 +44,13 @@ class MinHeap {
   }
 
   shiftUp (index) {
-    let parent = this.getParentIndex(index)
-    while (index > 0 && this.heap[index] < this.heap[parent]) {
-      this.swap(index, parent)
-      index = parent
-      parent = this.getParentIndex(index)
+    if (this.size() === 1 || this.isEmpty()) {
+      return true
+    }
+    let parentIndex = this.getParentIndex(index)
+    if (this.compare(this.heap[index], this.heap[parentIndex]) === CompareResult.BIGGER) {
+      this.swap(index, parentIndex)
+      this.shiftUp(parentIndex)
     }
   }
 
@@ -55,17 +62,17 @@ class MinHeap {
     return this.heap.length === 0
   }
 
-  min () {
-    return this.isEmpty() ? undefined : this.heap[this.size() - 1]
-  }
-
   extract () {
-    if (this.isEmpty()) return undefined
-    if (this.heap.length === 1) {
+    if (this.isEmpty()) {
+      return undefined
+    }
+    let leftIndex = this.getLeftIndex(0)
+    let rightIndex = this.getRightIndex(0)
+    if (this.size() === 1) {
       return this.heap.shift()
     } else {
-      this.swap(0, this.heap.length - 1)
-      let result = this.heap.push()
+      let result = this.heap.shift()
+      this.heap.unshift(this.heap.pop())
       this.shiftDown(0)
       return result
     }
@@ -76,23 +83,44 @@ class MinHeap {
   }
 
   shiftDown (index) {
-    if (index === this.heap.length - 1) return true
+    if (index >= this.size()) return
     else {
-      let right = this.getRightIndex(index)
-      let left = this.getLeftIndex(index)
-      if (left < this.size() && this.compare(index, left) === -1) {
-        this.swap(index, left)
-        index = left
+      let leftIndex = this.getLeftIndex(index)
+      let rightIndex = this.getRightIndex(index)
+      let element = index
+      let size = this.size()
+      if (leftIndex < size && this.compare(this.heap[element], this.heap[leftIndex]) !== CompareResult.BIGGER) {
+        element = leftIndex
       }
-      if (right < this.size() && this.compare(index, right) === -1) {
-        this.swap(index, right)
-        index = right
+      if (rightIndex < size && this.compare(this.heap[element], this.heap[rightIndex]) !== CompareResult.BIGGER) {
+        element = rightIndex
       }
-      if (this.heap[index] < Math.max(this.heap[left], this.heap[right])) {
-        this.shiftDown(index)
+      if (element !== index) {
+        this.swap(element, index)
+        this.shiftDown(element)
       }
     }
   }
 }
 
-
+let min = new MaxHeap()
+min.insert(1)
+min.insert(-3)
+min.insert(5)
+min.insert(10930 - 999)
+min.insert(1630)
+min.insert(150)
+min.insert(120)
+min.insert(-110)
+min.insert(510)
+min.insert(-10)
+min.insert(100)
+min.insert(-11100)
+console.log(min.heap)
+min.extract()
+min.extract()
+min.extract()
+min.extract()
+min.extract()
+console.log(min.heap)
+console.log(min.max())
